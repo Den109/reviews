@@ -48,18 +48,18 @@ left.addEventListener('click', () => {
   } else {
     currenItem = reviews.length - 1;
   }
-  review(currenItem);
+  review();
 
 })
 
 right.addEventListener('click', () => {
-  if (currenItem < reviews.length - 1) {
+  if (currenItem < 0) {
   currenItem++;
   console.log(currenItem);
   } else {
-    currenItem = 0;
+    currenItem = reviews.length - 1;
   }
-  review(currenItem);
+  review();
 })
 
 random.addEventListener('click', () => {
